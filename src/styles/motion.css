@@ -1,0 +1,27 @@
+button, a, .select-trigger, .month-trigger, input { transition: background-color .18s ease, color .18s ease, border-color .18s ease, box-shadow .18s ease, transform .18s ease; }
+.btn:not(:disabled):hover { transform: translateY(-1px); }
+.btn:not(:disabled):active { transform: translateY(0); }
+.sidebar nav button svg { transition: transform .18s ease; }
+.sidebar nav button:hover svg { transform: translateX(2px); }
+.quick-grid button:hover { border-color: var(--accent); transform: translateY(-2px); }
+.quick-grid button:active { transform: translateY(0); }
+.quick-grid button svg { transition: transform .18s ease; }
+.quick-grid button:hover svg { transform: translateY(-1px); }
+.plan-card { transition: border-color .2s ease, transform .2s ease; }
+.plan-card:hover { transform: translateY(-3px); border-color: var(--accent); }
+.page-content { min-width: 0; animation: page-enter .22s ease-out; }
+.modal-backdrop { animation: overlay-enter .15s ease-out; }
+.modal { animation: modal-enter .2s ease-out; }
+.modal > header > button { width: 30px; height: 30px; padding: 4px; border-radius: 8px; color: var(--muted); }
+.modal > header > button:hover { background: var(--surface-hover); color: var(--text); }
+.side-card { flex-shrink: 0; min-height: 190px; }
+.side-card .icon-box { position: relative; z-index: 1; }
+.sidebar { overflow-y: auto; scrollbar-width: thin; }
+@keyframes page-enter { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes overlay-enter { from { opacity: 0; } to { opacity: 1; } }
+@keyframes modal-enter { from { opacity: 0; transform: translateY(10px) scale(.985); } to { opacity: 1; transform: translateY(0) scale(1); } }
+@media (max-width: 1180px) { .conversion-grid { grid-template-columns: 1fr; } .dashboard-side { grid-template-columns: 1fr; } .settings-grid { grid-template-columns: 220px minmax(0, 1fr); } }
+@media (max-width: 900px) { .settings-grid { grid-template-columns: 1fr; } .head-actions { width: 100%; } .head-actions .btn { flex: 1; } .panel-title { flex-wrap: wrap; } .modal-backdrop { padding: 16px; } .modal { max-height: calc(100dvh - 32px); } }
+@media (max-width: 620px) { main { padding: 22px 16px 32px; } .topbar { padding: 0 12px; } .top-actions { gap: 8px; } .user-button { padding: 5px; gap: 8px; } .page-head { gap: 18px; } .page-head h1 { font-size: 28px; } .head-actions .btn { padding: 0 12px; } .panel-title strong { font-size: 14px; } .subhead { flex-direction: column; align-items: flex-start; gap: 14px; } .overview-footer { flex-wrap: wrap; } .conversion-actions { grid-template-columns: 1fr; } }
+@media (max-height: 800px) { .sidebar nav { gap: 5px; margin: 26px 0; } .sidebar nav button { min-height: 47px; } .side-card { min-height: 165px; padding: 16px; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } .btn:hover, .quick-grid button:hover, .plan-card:hover { transform: none; } }

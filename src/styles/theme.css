@@ -1,0 +1,89 @@
+:root { color-scheme: light; }
+[data-theme='dark'] { color-scheme: dark; --bg: #0f151c; --surface: #17212b; --surface-soft: #1c2833; --surface-hover: #24323e; --input: #141e28; --text: #e3eaf0; --text-secondary: #b0bfcc; --muted: #8c9eae; --line: #2a3845; --navy: #e3eaf0; --accent: #68d3aa; --accent-soft: #1b3933; --green-soft: #1b3933; --shadow: 0 8px 28px #00000020; --popup-shadow: 0 18px 50px #00000050, 0 0 0 1px #ffffff03; color: var(--text); background: var(--bg); }
+body, .app-body { color: var(--text); background: var(--bg); }
+.panel, .metric, .modal, .header-dropdown { color: var(--text); background: var(--surface); border-color: var(--line); box-shadow: var(--shadow); }
+.sidebar, .topbar { background: var(--surface); border-color: var(--line); }
+.topbar { box-shadow: 0 1px 0 var(--line); }
+.top-divider, .dropdown-profile, .preference-row, .session, .simple-row, td, .summary-card p { border-color: var(--line); }
+.logo strong, .profile-card strong, .session strong, .device-tip strong, .plan-usage strong, .file-name svg, .table-file svg, .device-tip > svg { color: var(--text); }
+.logo small, .profile span, .dropdown-profile span, .page-head p, .setting-head p, .subhead p, .profile-card p, .settings-nav small, .session small, .mode-grid small, .plan-card > p, .summary-card p, .usage-row > span, .plan-usage > div > span, .plan-usage small, .simple-row, .legend span, .axis, .chart-dates, .donut span, .empty-state, .details dt, .modal p, .chart-empty, .period-box strong, .security-tip span, .device-tip span, .selected-files small { color: var(--muted); }
+.page-head h1 { font-weight: 800; font-size: clamp(28px, 2.5vw, 36px); letter-spacing: -1.3px; line-height: 1.2; }
+.page-head p { font-size: 15px; line-height: 1.6; }
+.panel-title strong, .section-title strong { font-weight: 700; letter-spacing: -.4px; }
+.sidebar nav button { font-size: 14px; font-weight: 500; color: var(--text-secondary); }
+.sidebar nav button:hover, .icon-button:hover, .user-button:hover, .header-dropdown > button:hover { background: var(--surface-hover); }
+.sidebar nav button.active, .settings-nav button.active, .user-button[aria-expanded='true'] { color: var(--accent); background: var(--accent-soft); border-color: var(--line); }
+.settings-nav button { background: var(--surface); color: var(--text-secondary); border-color: var(--line); }
+.settings-nav button:hover { background: var(--surface-hover); }
+.avatar, .icon-box, .profile-card strong span { background: var(--accent-soft); color: var(--accent); }
+.icon-box.orange { background: #fff1df; color: #c8751b; }
+.side-card, .quick-grid button, .side-actions > button, .mode-grid > button, .selected-files > div { background: var(--surface); color: var(--text); border-color: var(--line); }
+.quick-grid button:hover, .side-actions > button:hover { background: var(--surface-hover); }
+.side-actions > button > svg:first-child { background: var(--accent-soft); color: var(--accent); }
+.quick-grid button svg { background: transparent; color: var(--accent); }
+.quick-grid button span, .side-actions small { color: var(--muted); font-size: 10px; }
+.mode-grid > button.selected { background: var(--accent-soft); border-color: var(--accent); }
+.mode-grid > button.selected::after { border-color: var(--accent); }
+.info-tip, .security-tip { background: var(--accent-soft); color: var(--text-secondary); }
+.security-tip strong, .security-tip > svg { color: var(--accent); }
+.device-tip { background: var(--surface-soft); border-color: var(--line); }
+.drop-zone { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); background: var(--surface); }
+.drop-zone.dragging { background: var(--accent-soft); border-color: var(--accent); }
+.drop-zone > svg { background: var(--accent-soft); color: var(--accent); }
+.drop-zone p, .drop-zone small { color: var(--muted); }
+.btn { background: var(--surface); color: var(--text-secondary); border-color: var(--line); font-size: 13px; font-weight: 600; box-shadow: none; }
+.btn:hover { background: var(--surface-hover); color: var(--text); border-color: var(--accent); }
+.btn.primary { background: linear-gradient(135deg, #078c65, #087254); color: #fff; border-color: #07815d; box-shadow: 0 4px 12px #08795920; }
+.btn.primary:hover { background: #07865f; color: #fff; }
+.link-button, .forgot, .auth-switch button, .demo-login { color: var(--accent); }
+.search-input, .auth-box .auth-field > div, .mock-form input, .row-actions button, .pagination button { background: var(--input); border-color: var(--line); color: var(--text-secondary); }
+.search-input input, .auth-box .auth-field input { background: transparent; color: var(--text); }
+.search-input:focus-within, .auth-box .auth-field > div:focus-within { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 10%, transparent); }
+.auth-box label svg, .search-input svg { color: var(--muted); }
+.auth-field, .mock-form > label { font-weight: 600; }
+th { background: var(--surface-soft); color: var(--text-secondary); font-size: 12px; font-weight: 600; }
+td { color: var(--text-secondary); font-size: 12px; padding: 13px 11px; }
+tbody tr:hover { background: var(--surface-soft); }
+.type-tag { background: var(--surface-soft); color: var(--text-secondary); font-weight: 500; }
+.row-actions button:hover { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+.pagination { color: var(--muted); }
+.pagination button.active { background: #087959; color: #fff; border-color: #087959; }
+.tabs button { background: var(--surface); color: var(--text-secondary); border-color: var(--line); }
+.tabs button.active { color: var(--accent); background: var(--accent-soft); }
+.selection-bar { background: var(--accent-soft); color: var(--accent); }
+.plan-card.popular { background: var(--surface); border-color: var(--accent); }
+.popular-tag { background: #087959; color: #fff; }
+.price, .plan-usage > div, .period-box { border-color: var(--line); }
+.plan-card li svg { background: var(--accent-soft); color: var(--accent); }
+.usage-row > div, .plan-progress { background: var(--surface-hover); }
+.donut > div { background: var(--surface); }
+.bar-chart { border-color: var(--line); background: repeating-linear-gradient(to bottom, var(--line) 0, var(--line) 1px, transparent 1px, transparent 37px); }
+.toggle { background: #b7c5cf; }
+.toggle.on { background: #088660; }
+.header-dropdown .logout-button { color: #dc625c; }
+.header-dropdown .logout-button:hover { background: color-mix(in srgb, #dc625c 10%, var(--surface)); }
+.auth-page, .auth-form { background: var(--surface); color: var(--text); }
+.auth-title h1 { font-weight: 800; letter-spacing: -1.2px; }
+.auth-title p, .auth-switch, .check-line { color: var(--text-secondary); }
+.or span { background: var(--surface); color: var(--muted); }
+.or::before { border-color: var(--line); }
+.toast { background: var(--surface); color: var(--accent); border-color: color-mix(in srgb, var(--accent) 40%, var(--line)); box-shadow: var(--popup-shadow); }
+[data-theme='dark'] .sidebar { background: #121b24; }
+[data-theme='dark'] .topbar { background: #141e28; }
+[data-theme='dark'] .icon-box.orange { background: #392b1e; color: #edb66f; }
+[data-theme='dark'] .status.concluido, [data-theme='dark'] .status.processado, [data-theme='dark'] .status.ativa { background: #1b3930; color: #7cdbac; }
+[data-theme='dark'] .status.processando, [data-theme='dark'] .blue { background: #1d304b; color: #8bbcff; }
+[data-theme='dark'] .status.erro, [data-theme='dark'] .red { background: #3b272b; color: #f69792; }
+[data-theme='dark'] .status.pendente, [data-theme='dark'] .status.expirado, [data-theme='dark'] .orange { background: #382f20; color: #edc180; }
+[data-theme='dark'] .status.cancelado, [data-theme='dark'] .status.inativa { background: #283440; color: #a9b9c8; }
+.metric small, [data-theme='dark'] .metric small { color: var(--muted); }
+[data-theme='dark'] .metric:last-child small { color: var(--muted); }
+[data-theme='dark'] .summary > p svg:not(.red):not(.blue):not(.orange) { background: var(--accent-soft); color: var(--accent); }
+[data-theme='dark'] .summary > p svg.red { background: #3b272b; color: #f69792; }
+[data-theme='dark'] .summary > p svg.blue { background: #1d304b; color: #8bbcff; }
+[data-theme='dark'] .summary > p svg.orange { background: #382f20; color: #edc180; }
+.panel, .metric { box-shadow: none; }
+.btn.primary { background: #087959; box-shadow: none; }
+.page-head h1 { font-weight: 700; letter-spacing: -.9px; }
+.plan-card li svg { background: transparent; }
+.popular-tag { background: var(--surface-soft); color: var(--text-secondary); border: 1px solid var(--line); }

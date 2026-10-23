@@ -1,0 +1,49 @@
+.conversion-grid { display: grid; grid-template-columns: minmax(500px, 1.55fr) minmax(360px, 1fr); gap: 16px; }
+.conversion-grid > div, .conversion-grid > aside { display: grid; align-content: start; gap: 16px; }
+.section-card { padding: 16px; }
+.section-title { display: flex; align-items: center; gap: 13px; margin-bottom: 13px; }
+.section-title .icon-box { width: 38px; height: 38px; }
+.section-title svg { width: 19px; }
+.mode-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.mode-grid > button { position: relative; min-height: 180px; padding: 20px; display: flex; flex-direction: column; align-items: flex-start; gap: 8px; text-align: left; border: 1px solid #d9e2e5; border-radius: 10px; background: #fff; cursor: pointer; }
+.mode-grid > button.selected { border: 2px solid #0a8a62; background: linear-gradient(140deg, #fff, #edfaf5); }
+.mode-grid > button.selected::after { content: ""; position: absolute; width: 12px; height: 12px; top: 12px; right: 12px; border: 5px solid #077252; border-radius: 50%; }
+.mode-grid strong { font-size: 16px; }
+.mode-grid small { color: #6f7991; line-height: 1.45; }
+.mode-icons { display: flex; align-items: center; gap: 10px; }
+.mode-icons .icon-box { width: 48px; height: 48px; }
+.mode-icons > svg { width: 16px; }
+.drop-zone { min-height: 260px; padding: 28px; border: 1.5px dashed #8bd8bd; border-radius: 10px; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; gap: 8px; }
+.drop-zone > svg { color: #0b8a62; padding: 10px; border-radius: 50%; background: #def5ec; }
+.drop-zone p { margin: 0 0 5px; color: #7c859c; }
+.drop-zone small { margin-top: 4px; color: #7f899f; }
+.selected-files { display: grid; gap: 7px; margin-top: 10px; }
+.selected-files > div { min-height: 50px; padding: 8px 12px; border: 1px solid #e2e9eb; border-radius: 8px; display: flex; align-items: center; gap: 10px; }
+.selected-files > div > svg { color: #087455; }
+.selected-files span { flex: 1; display: grid; }
+.selected-files small { color: #798399; }
+.selected-files button { border: 0; background: none; cursor: pointer; }
+.info-tip { margin-top: 12px; padding: 10px 12px; border-radius: 8px; background: #f1f8f6; display: flex; align-items: center; gap: 12px; color: #68738b; font-size: 12px; }
+.info-tip .icon-box { width: 36px; height: 36px; }
+.period { display: grid; grid-template-columns: 1fr 16px 1fr; align-items: end; gap: 8px; margin: 5px 0 16px; }
+.period label, .date-field { display: grid; gap: 7px; font-size: 12px; color: #5f6981; }
+.period label > div, .date-field > div { height: 43px; display: flex; align-items: center; padding: 0 10px; border: 1px solid #d6dfe3; border-radius: 8px; background: #fff; }
+.period input, .date-field input { width: 100%; min-width: 0; border: 0; outline: 0; color: #65718c; }
+.period svg, .date-field svg { width: 17px; }
+.period > i { padding-bottom: 12px; font-style: normal; }
+.summary-card p { min-height: 47px; margin: 0; display: grid; grid-template-columns: 28px 1fr auto; align-items: center; border-bottom: 1px solid #e4eaec; color: #69738a; font-size: 13px; }
+.summary-card p:last-child { border-bottom: 0; }
+.summary-card p svg { width: 19px; }
+.summary-card b { font-weight: 500; }
+.conversion-actions { display: grid; grid-template-columns: .8fr 1.2fr; gap: 10px; }
+.conversion-actions .btn { min-height: 50px; }
+.drop-zone.dragging { background: #e7faf0; border-color: #07825c; }
+.order-confirmation { width: min(510px, 100%); }
+.confirmation-icon { display: grid; place-items: center; width: 52px; height: 52px; margin: 22px auto 16px; border-radius: 50%; background: var(--accent-soft); color: var(--accent); }
+.order-confirmation > h3 { margin: 0; text-align: center; font-size: 22px; color: var(--text); }
+.order-confirmation > p { text-align: center; font-size: 13px; line-height: 1.65; }
+.confirmation-number { display: grid; justify-items: center; gap: 12px; padding: 18px; margin-top: 20px; border: 1px solid var(--line); border-radius: 9px; background: var(--surface-soft); }
+.confirmation-number > span { font-size: 11px; color: var(--muted); }
+.confirmation-number code { font-family: inherit; font-size: 12px; color: var(--text); overflow-wrap: anywhere; text-align: center; user-select: all; }
+.order-confirmation .confirmation-note { margin: 18px 0; font-size: 11px; color: var(--muted); }
+.order-confirmation > footer { display: flex; justify-content: flex-end; flex-wrap: wrap; gap: 10px; }

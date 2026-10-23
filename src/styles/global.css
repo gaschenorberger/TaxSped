@@ -1,0 +1,37 @@
+:root {
+  font-family: 'Manrope Variable', 'Segoe UI', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1b2936;
+  background: #f5f7fa;
+  font-synthesis: none;
+  --green: #057352;
+  --green-dark: #04563f;
+  --green-soft: #e9f7f1;
+  --mint: #4ad2a2;
+  --navy: #08142f;
+  --muted: #66718d;
+  --line: #dfe7ea;
+  --surface: #ffffff;
+  --shadow: 0 10px 35px rgba(18, 58, 47, .07);
+  --bg: #f5f7fa;
+  --surface-soft: #f5f7fa;
+  --surface-hover: #edf2f5;
+  --text: #1b2936;
+  --text-secondary: #5d6e7d;
+  --accent: #087959;
+  --accent-soft: #e8f5ee;
+  --input: #ffffff;
+  --popup-shadow: 0 16px 45px rgba(20, 40, 55, .14), 0 2px 6px rgba(20, 40, 55, .04);
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: var(--bg); -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+button, input, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid rgba(0, 151, 103, .2); outline-offset: 2px; }
+button:disabled { cursor: not-allowed; opacity: .5; }
+svg { flex: 0 0 auto; }
+input, button { -webkit-tap-highlight-color: transparent; }
+input::placeholder { color: var(--muted); opacity: .8; }
+

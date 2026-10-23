@@ -1,0 +1,52 @@
+.plan-usage { padding: 18px; display: grid; grid-template-columns: 1fr 1fr 1fr; margin-bottom: 30px; }
+.plan-usage > div { min-height: 100px; padding: 5px 25px; display: flex; align-items: flex-start; gap: 16px; border-right: 1px solid #e2e8ea; }
+.plan-usage > div:last-child { border: 0; }
+.plan-usage > div > span { flex: 1; display: grid; gap: 5px; color: #37425c; font-size: 12px; }
+.plan-usage strong { color: var(--navy); font-size: 23px; }
+.plan-usage small { color: #7d879b; }
+.plan-progress { height: 10px; margin: 0; }
+.subhead { display: flex; align-items: flex-end; justify-content: space-between; margin-bottom: 20px; }
+.subhead h2 { margin: 0; font-size: 27px; }
+.subhead p { margin: 6px 0 0; color: var(--muted); }
+.plans-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; }
+.plan-card { position: relative; padding: 28px 26px 20px; display: flex; flex-direction: column; min-height: 500px; }
+.plan-card.popular { border: 2px solid #06835e; background: linear-gradient(140deg, #fff, #f0fbf7); }
+.popular-tag { position: absolute; top: 22px; right: 22px; padding: 7px 15px; border-radius: 18px; color: #fff; background: #07835c; font-size: 11px; }
+.plan-card h3 { margin: 16px 0 3px; font-size: 24px; }
+.plan-card > p { min-height: 54px; margin: 0; color: #6d7890; font-size: 14px; line-height: 1.45; }
+.price { display: flex; align-items: baseline; gap: 4px; padding: 16px 0 15px; border-bottom: 1px solid #dfe6e8; }
+.price small { font-size: 15px; font-weight: 800; }
+.price strong { font-size: 42px; line-height: 1; }
+.price span { font-size: 15px; }
+.plan-card ul { flex: 1; padding: 12px 0; margin: 0; list-style: none; display: grid; align-content: start; gap: 12px; }
+.plan-card li { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.plan-card li svg { width: 22px; height: 22px; padding: 5px; border-radius: 50%; color: #05734f; background: #dcf5e9; }
+.plan-card .btn { width: 100%; }
+.comparison { min-width: 480px; }
+.plan-overview { display: grid; grid-template-columns: 1.05fr 1fr 1fr; gap: 16px; margin-bottom: 38px; }
+.plan-overview-card { min-width: 0; padding: 22px 24px; min-height: 177px; display: flex; flex-direction: column; }
+.overview-label { display: flex; align-items: center; justify-content: space-between; gap: 12px; color: var(--text-secondary); font-size: 12px; font-weight: 500; }
+.overview-label > svg { color: var(--muted); }
+.plan-active { display: flex; align-items: center; gap: 5px; font-size: 10px; color: var(--accent); }
+.overview-value { margin-top: 18px; color: var(--text); font-size: clamp(21px, 2vw, 28px); font-weight: 700; line-height: 1.2; letter-spacing: -.8px; font-variant-numeric: tabular-nums; }
+.overview-value > span { color: var(--muted); font-size: 12px; font-weight: 500; letter-spacing: 0; }
+.overview-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-top: auto; padding-top: 20px; color: var(--text-secondary); font-size: 12px; }
+.overview-footer small, .overview-footer > span:last-child { color: var(--muted); font-size: 10px; }
+.overview-progress { height: 5px; margin-top: 18px; border-radius: 4px; background: var(--surface-hover); overflow: hidden; }
+.overview-progress i { display: block; height: 100%; background: #16866a; border-radius: inherit; }
+.overview-progress.storage i { background: #778b9b; }
+.overview-note { margin-top: 9px; color: var(--muted); font-size: 11px; }
+.current-plan { border-top: 3px solid #16866a; }
+.plan-card { border-radius: 10px; padding: 24px; }
+.plan-card > .icon-box { width: 26px; height: 26px; border-radius: 0; background: transparent; color: var(--text-secondary); }
+.plan-card > .icon-box svg { width: 21px; height: 21px; }
+.plan-card.popular { border-width: 1px; }
+.plan-card.current { border-color: var(--accent); }
+.plan-card h3 { font-size: 21px; font-weight: 700; margin-top: 20px; }
+.plan-card > p { font-size: 13px; }
+.price strong { font-size: 36px; font-weight: 700; }
+.plan-card li { font-size: 12px; }
+.plan-card li svg { padding: 2px; width: 16px; height: 16px; border-radius: 0; background: transparent; }
+.popular-tag { padding: 4px 9px; font-size: 10px; border-radius: 5px; }
+@media (max-width: 1100px) { .plan-overview { gap: 12px; } .plan-overview-card { padding: 18px; } .overview-footer { flex-direction: column; align-items: flex-start; gap: 4px; } }
+@media (max-width: 900px) { .plan-overview { grid-template-columns: 1fr; gap: 12px; margin-bottom: 28px; } .plan-overview-card { min-height: 155px; } .overview-footer { flex-direction: row; } }
